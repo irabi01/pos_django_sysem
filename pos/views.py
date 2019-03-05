@@ -9,3 +9,8 @@ def _loginView(request):
 def _dashboard(request):
     template = "dashboard/dashboard.html"
     return render(request, template, {})
+
+
+def _inventory(request):
+    template = "dashboard/inventory.html"
+    return render(request, template, {})

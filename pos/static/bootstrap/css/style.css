@@ -28,6 +28,61 @@ body{
 
 
 
+/* dashboard page style */
+.dashboard{
+    padding: 50px 0px;
+}
+.dashboard .content{
+    text-align: center;
+    padding: 20px 0px;
+}
+.dashboard .content h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.dashboard .content i{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    color: #3399ff;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 30px;
+
+}
+.dashboard .content p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+
+
+/* inventoy page style */
+.inventoy{
+    padding: 50px 0px;
+}
+.inventoy .content{
+    text-align: center;
+    padding: 20px 0px;
+}
+.inventoy .content h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
 /* footer page style */
 .footer .footer_content{
     text-align: center;
