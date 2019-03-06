@@ -7,6 +7,142 @@
                 <div class="col-md-12">
                     <div class="content w3-card-4">
                         <h1>Inventory</h1>
+                        <div class="w3-bar w3-blue">
+                                <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'add_inventory')">Add Inventory</button>
+                                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'inventory_list')">Inventory List</button>
+                        </div> 
+                        <div id="add_inventory" class="inventory">
+                            <h2>Add Inventory</h2>
+                            <fieldset>
+                                <legend style="text-align:justify">inventory details</legend>
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Product ID</label>
+                                                    <input type="text" class="w3-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Produst Code</label>
+                                                    <input type="text" class="w3-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Product Name</label>
+                                                    <input type="text" class="w3-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Quantity</label>
+                                                    <input type="number" class="w3-input">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Unity</label>
+                                                    <input type="number" class="w3-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Tax</label>
+                                                    <input type="number" class="w3-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Discount</label>
+                                                    <input type="number" class="w3-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">Price</label>
+                                                    <input type="number" class="w3-input">
+                                                </div>
+                                            </div>    
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="">Vendor</label>
+                                                    <select name="" id="" class="w3-input">
+                                                        <option value="">-------- Select vendor --------</option>
+                                                        <option value="vendor1">vendor1</option>
+                                                        <option value="vendor2">vendor2</option>
+                                                        <option value="vendor3">vendor3</option>
+                                                        <option value="vendor4">vendor4</option>
+                                                        <option value="vendor5">vendor5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="">Description</label>
+                                                    <input type="text" class="w3-input">
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <button class="btn btn-sm btn-info btn-block">save</button>
+                                                </div>
+                                            </div>  
+                                        </div>
+
+
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                              
+                        <div id="inventory_list" class="inventory" style="display:none">
+                            <form action="">
+                                <div class="form-group">
+                                   <input type="text" class="w3-input" placeholder="search product">
+                                </div>
+                            </form>
+                        </div>
+                              
+
+                        <script>
+                            // function openCity(cityName) {
+                            // var i;
+                            // var x = document.getElementsByClassName("inventory");
+                            // for (i = 0; i < x.length; i++) {
+                            //     x[i].style.display = "none";
+                            // }
+                            // document.getElementById(cityName).style.display = "block";
+                            // }
+
+
+                            function openCity(evt, cityName) {
+                            var i, x, tablinks;
+                            x = document.getElementsByClassName("inventory");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < x.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " w3-red";
+                            }
+
+
+                        </script>    
                     </div>
                 </div>
             </div>

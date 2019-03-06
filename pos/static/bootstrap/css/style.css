@@ -66,15 +66,23 @@ body{
     padding: 50px 0px;
 }
 .inventoy .content{
-    text-align: center;
     padding: 20px 0px;
 }
 .inventoy .content h1{
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size: 18px;
+    text-align: center;
 }
-
+.inventoy .content .inventory{
+    padding:0px 20px;
+}
+.inventoy .content .inventory h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-align: justify;
+}
 
 
 
