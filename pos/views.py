@@ -18,4 +18,4 @@ def _inventory(request):
 
 def _pos(request):
     template = "dashboard/pos.html"
-    return render(requset, template, {})
+    return render(request, template, {})
