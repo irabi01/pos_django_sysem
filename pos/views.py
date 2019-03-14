@@ -14,3 +14,8 @@ def _dashboard(request):
 def _inventory(request):
     template = "dashboard/inventory.html"
     return render(request, template, {})
+
+
+def _pos(request):
+    template = "dashboard/pos.html"
+    return render(requset, template, {})
