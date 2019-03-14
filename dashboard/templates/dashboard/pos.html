@@ -1,0 +1,46 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}POS | User Point of Sale{% endblock %}
+{% block content %}
+    <div class="pos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="pos_content_item">
+              <h1>Items</h1>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pos_content_amount">
+              <h1>amount</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="pos_content_controller">
+              <div class="row">
+                <div class="col-md-3">
+                  <button type="button" name="button">return item</button>
+                </div>
+                <div class="col-md-3">
+                  <button type="button" name="button">enter manually</button>
+                </div>
+                <div class="col-md-3">
+                  <button type="button" name="button">lock screen</button>
+                </div>
+                <div class="col-md-3">
+                  <button type="button" name="button">return item</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pos_content_calculator">
+              <h1>calculator</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+{% endblock %}
